@@ -1,0 +1,120 @@
+body {
+  background-color: #00b6c7;
+  background-image: url("images/bg-pattern-bottom.svg"),
+    url("images/bg-pattern-top.svg");
+  background-position: left 18cm top 8.8cm, right 18.8cm bottom -11cm;
+  background-repeat: no-repeat, no-repeat;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+  text-align: center;
+}
+
+/* Card Container */
+
+.card-container {
+  border-radius: 15px;
+  background-color: #fff;
+  height: 375px;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  width: 350px;
+  transform: translate(-50%, 32%);
+}
+
+/* Card Header */
+
+.card-header img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+#Vic-photo {
+  border-radius: 50%;
+  border: 5px solid #fff;
+  bottom: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+/* Card Body */
+
+.card-content {
+  bottom: 45px;
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 100%;
+  height: 168px;
+  position: relative;
+}
+
+/* Card Main */
+
+.card-main {
+  grid-row: 1/2;
+}
+
+.card-main h3 {
+  color: #2d3248;
+  margin: 18.72px 0 0 0;
+  padding-bottom: 0.5rem;
+}
+
+.card-main span {
+  color: #6a6f81;
+  font-weight: 300;
+  margin-left: 0.5rem;
+}
+
+.card-main p {
+  color: #6a6f81;
+  font-size: 0.75rem;
+  margin: 0;
+}
+
+/* Card Footer */
+
+.card-footer {
+  align-items: center;
+  border-top: #ccc solid 0.5px;
+  display: flex;
+  flex-direction: row;
+  grid-row: 2/3;
+  justify-content: space-evenly;
+}
+
+.footer-info h2 {
+  color: #2d3248;
+  font-size: 1.125rem;
+  margin: 0;
+  padding: 10px 0 5px 0;
+}
+
+.footer-info p {
+  color: #6a6f81;
+  font-size: 0.75rem;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+/* Attributes */
+
+.attribution {
+  position: fixed;
+  bottom: 0;
+  left: 14cm;
+  font-size: 11px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Media Queries */
+
+@media (max-width: 414px) {
+  body {
+    background-position: left 4.3cm top 8.8cm, right 4.3cm bottom -11cm;
+  }
+}
